@@ -1,0 +1,10 @@
+{
+    "prod": {
+        "httpgraphqluri": "https://fun-whale-23.hasura.app/v1/graphql",
+        "httpgraphqlsecret": "godplan",
+        "appdomain": "http://localhost:3000",
+        "usequeue": false,
+        "gcpprojectid": "student-management-e3693",
+        "firebasefunctiondomain": "http://0.0.0.0:5001/student-management-e3693/us-central1"
+    }
+}
