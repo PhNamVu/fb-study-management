@@ -1,6 +1,6 @@
 {
     "prod": {
-        "httpgraphqluri": "https://fun-whale-23.hasura.app/v1/graphql",
+        "httpgraphqluri": "https://study-management.hasura.app/v1/graphql",
         "httpgraphqlsecret": "godplan",
         "appdomain": "http://localhost:3000",
         "usequeue": false,
