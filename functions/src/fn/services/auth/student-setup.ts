@@ -16,7 +16,7 @@ export default async (
   try {
     const userId = uuid()
     const {
-      input: { email, facultyId, fullName, password, roles  },
+      input: { email, facultyId, fullName, password },
     } = req.body.input;
 
     await admin.auth().createUser({
@@ -37,7 +37,7 @@ export default async (
           email,
           fullName,
           facultyId,
-          roles,
+          roles: 'STUDENT'
         },
       });
   
@@ -53,7 +53,7 @@ export default async (
     return res.status(200).json({
       status: "success",
       statusCode: 200,
-      message: "Ok",
+      message: userId,
     });
   } catch (error) {
     console.log(`/studentSetup end with error`);
