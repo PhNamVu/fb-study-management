@@ -19,3 +19,7 @@ export const coordinatorSetup = functions.https.onRequest(async (req, res) => {
 export const guestSetup = functions.https.onRequest(async (req, res) => {
     await (await import("./fn/services/auth/guest-setup")).default(req, res)
 })
+
+export const submitContribution = functions.https.onRequest(async (req, res) => {
+    await (await import("./fn/services/mail/submit-contribution")).default(req, res)
+})
